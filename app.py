@@ -93,5 +93,5 @@ def getResponse(ints, intents_json):
 
 
 if __name__ == "__main__":
-    app.run(port=os.getenv('PORT')
+    app.run(port=os.getenv('PORT'), host="0.0.0.0")
 
