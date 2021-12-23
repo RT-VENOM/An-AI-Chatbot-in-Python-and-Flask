@@ -3,6 +3,7 @@ import random
 import numpy as np
 import pickle
 import json
+import os 
 from flask import Flask, render_template, request
 from flask_ngrok import run_with_ngrok
 import nltk
@@ -92,5 +93,5 @@ def getResponse(ints, intents_json):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=os.getenv('PORT')
 
